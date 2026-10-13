@@ -4,14 +4,14 @@
 # # Expected: 6
 
 numbers = [4, 5, 4, 6, 5, 7]
-first_non_repeating_array = 0
+first_non_repeating_array = numbers[0]
 
-for i in 0...numbers.length
-	for j in i+1...numbers.length 
-		if(numbers[i] != numbers[j])
-			 break
-		end
+
+for i in 1...numbers.length
+	unless(first_non_repeating_array == numbers[i] ) then
+		break
 	end
-end
+	first_non_repeating_array = numbers[i]
 
+end
 puts first_non_repeating_array
