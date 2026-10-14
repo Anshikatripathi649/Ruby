@@ -35,13 +35,11 @@ ele = 0
 for i in 0...numbers.length
 	ele = numbers[i]
 	for j in i+1...numbers.length
-		if(ele == numbers[j]) then
+		if(ele == numbers[j])
 			arr.push(numbers[i])
 			break
 		end
-
 	end
-
 end
 
 puts arr
